@@ -1,0 +1,67 @@
+name: chiba_xenium_rctd
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # Python version
+  - python=3.10
+
+  # Core scientific computing
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib-base
+  - seaborn
+
+  # Single-cell and spatial transcriptomics
+  - scanpy
+  - anndata
+  - squidpy
+
+  # Image analysis and spatial methods
+  - scikit-image
+  - scikit-learn
+
+  # Data handling
+  - h5py
+  - pytables
+  - pyarrow
+
+  # Network analysis
+  - networkx
+
+  # Utilities
+  - tqdm
+  - jupyter
+  - notebook
+  - ipykernel
+
+  # R installation (base only, packages installed via BiocManager)
+  - r-base>=4.3
+  - r-essentials
+  - r-devtools
+  - r-biocmanager
+
+  # Basic R packages (CRAN only - Bioconductor packages installed separately)
+  - r-matrix
+  - r-data.table
+  - r-readr
+  - r-dplyr
+  - r-tidyr
+  - r-ggplot2
+  - r-rcolorbrewer
+  - r-circlize
+
+  # Pip-only packages
+  - pip
+  - pip:
+    - harmonypy
+    - scimap
+    - mygene
+    - mpl-chord-diagram
+    - leidenalg
+    - python-igraph
+
+# After creating this environment, run: Rscript install_r_packages.R
+# This will install Bioconductor packages and spacexr via BiocManager

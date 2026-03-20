@@ -1,0 +1,22 @@
+# Chiba Xenium RCTD Analysis - Python Requirements
+# Resolves version conflicts between squidpy, scimap, and zarr
+
+# For use with existing maitra_spatial environment
+# Install with: pip install -r requirements_pinned.txt
+
+# Spatial transcriptomics - avoid spatialdata dependency issues
+# squidpy 1.3+ requires spatialdata which has complex zarr dependencies
+# squidpy 1.2.x works fine for Chiba analysis
+squidpy<1.3
+
+# Batch correction - compatible with scanpy/anndata
+harmonypy==0.0.9
+
+# Spatial tissue analysis - requires scikit-image, anndata
+scimap>=2.3.5
+
+# Gene annotation
+mygene==3.2.2
+
+# Note: mpl-chord-diagram has installation issues on some systems
+# Use chord_diagram_alternative.py instead (included in repo)
