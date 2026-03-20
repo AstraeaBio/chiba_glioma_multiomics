@@ -106,7 +106,7 @@ Raw and processed data are deposited in the National Metabolomics Data Repositor
 
 ## License
 
-This code is made available for academic use. Please cite the manuscript if you use any portion of this code.
+This code is made available for academic use under the MIT License. Please cite the manuscript if you use any portion of this code.
 
 ## Contact
 
